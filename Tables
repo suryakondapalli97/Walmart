@@ -1,0 +1,26 @@
+#Contain all the table creations on database side
+CREATE TABLE Justin_Songs(
+    Songname VARCHAR(50),
+     ID VARCHAR(50),
+     Tweet VARCHAR(100)}
+)
+
+CREATE TABLE Songs_Analtics(
+    Verified_Status CHAR(1) DEFAULT 'N',
+     Follower_Count int,
+     Retweet_Count int,
+     Statuses_Count int}
+)
+
+CREATE TABLE Justin_Songs_Final(
+    Songname VARCHAR(50),
+     ID VARCHAR(50),
+     Tweet VARCHAR(100)}
+)
+
+CREATE TABLE Songs_Analtics_Final(
+    Verified_Status CHAR(1) DEFAULT 'N',
+     Follower_Count int,
+     Retweet_Count int,
+     Statuses_Count int}
+)
