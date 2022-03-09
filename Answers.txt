@@ -1,0 +1,26 @@
+Q:-What are the risks involved in building such a pipeline?
+Answer:- The data is more kind of unstructered and also it contains lot of useless data. We need to analyze more on the fields that we need rather than the insights.
+Also it is a streaming data hence we need to consume this data every second and consuming lot of useless data is not efficient.
+
+
+Q:-How would you roll out the pipeline going from proof-of-concept to a production-ready solution?
+Answer:-I would divide the POC to 3 phases. The first part contains the connection to Twitter API. The second part contains the consumption of this data. The last one is data transformation.
+Part 2 and 3 can be handled solely by data engineers but first one can be cordinated between API team and data engineers
+
+
+Q:-What would a production-ready solution entail that a POC wouldn't?
+Answer:-Production ready solution would provide intresting study about the data. We can make some modification to tables and join them through a primary key and see more insights.
+Also we can learn how many tweets are often repeated and how accurate this POC gives details
+
+
+Q:-What is the level of effort required to deliver each phase of the solution?
+Answer:- The first phase requires lot of coordination and thinking. We need to decide what fields from the JSON format we need to consider. We need to analyze what data is coming for each field and whether it will be useful or not.
+Hence this phase is very important and time taking.
+The second phase is moderate. We need to come up with a good optimized way to consume the data from API and also decide which the they best storage option for this data.
+Incase if we need to use unstructured data then we need to use nosql database like HBase or Cassandra
+The third phase is the data phase and little easier compared to other phases. Here we clean data and transform data as required by downstream team.
+
+
+Q:-What is your estimated timeline for delivery for a production-ready solution?
+Answer:- Estimated time for first phase would be around 2-3 weeks since it require components to connect to twitter API and analyze which fields we require.
+Second phase may take around 2 week as it requires how we consume data and how we store itThe third phase may take around a week as it is straight forward
